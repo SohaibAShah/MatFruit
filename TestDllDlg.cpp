@@ -8,6 +8,7 @@
 #include "SPExport.h"
 #include<fstream>
 #include<iostream>
+#include <PLS/PartialLeastSquares.hh>
 //using namespace std;
 #include<string>
 #include<stdlib.h>
@@ -250,20 +251,13 @@ BOOL CTestDllDlg::OnInitDialog()
     CString tBrix;
     CString tDM;
 
-    //CString M;
-    //t.Format(_T("%d"), iter+1);
-    //t.Format(_T("%d"), iter);
-    double randBrix = (rand() % 16) + 6;
-    tBrix.Format(_T("%.2f"), randBrix);
-    float randDM = (rand() % 28) + 18;
-    tDM.Format(_T("%.2f"), randDM);
-
+    
     m_DeviveHandle = SPConnect(ComPort1);
 
     if (m_DeviveHandle > 0 && arduino.isConnected())
         m_EditMessage.SetWindowTextA("Please Calibrate Your Device");
     else
-        m_EditMessage.SetWindowTextA("Brix: 9.2 \r\n Dry Matter: 23.5");
+        m_EditMessage.SetWindowTextA("Restart Your device");
         //m_EditMessage.SetWindowTextA("Brix: " + tBrix + " \r\n Dry Matter: " + tDM + "");
     DWORD dwIntegrateTime = 40;
     int integT = 200;
@@ -275,8 +269,7 @@ BOOL CTestDllDlg::OnInitDialog()
     }
     else
     {
-        //m_EditMessage.SetWindowTextA("Brix: 10.2 \r\n Dry Matter: 23.5");
-       // m_EditMessage.SetWindowTextA("Brix: " + tBrix + " \r\n Dry Matter: " + tDM + "");
+        m_EditMessage.SetWindowTextA("Restart Your device");f
     }
 
     // TODO: Add extra initialization here
@@ -645,14 +638,12 @@ void CTestDllDlg::OnBnClickedBtnReadSCAN()
     CString t;
     CString tBrix;
     CString tDM;
+    // load PLS model saved previously
+    pls->LoadModel("PLSModel.yml");
+    result = pls.project(SampleData);
+    tBrix = reslut[0];
+    tDM = reslut[1];
     
-    //CString M;
-    //t.Format(_T("%d"), iter+1);
-    //t.Format(_T("%d"), iter);
-    double randBrix = rand() % 16 + 6;
-    tBrix.Format(_T("%.2f"), randBrix);
-    double randDM = rand() % 28 + 12;
-    tDM.Format(_T("%.2f"), randDM);
     Sleep(700);
     data = "ON";
     Sleep(500);

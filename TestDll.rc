@@ -254,9 +254,9 @@ IDI_ICON1               ICON                    "res\\icon1.ico"
 // Bitmap
 //
 
-IDR_MAINFRAME           BITMAP                  "C:\\Users\\sohaib\\Desktop\\HackBGRT-1.5.1\\icon.bmp"
+IDR_MAINFRAME           BITMAP                  "E:\\Project Save for Backups\\VCTest_sourcecode\\res\\icon.bmp"
 
-IDB_BITMAP1             BITMAP                  "C:\\Users\\sohaib\\Desktop\\HackBGRT-1.5.1\\calibration1.bmp"
+IDB_BITMAP1             BITMAP                  "E:\\Project Save for Backups\\VCTest_sourcecode\\res\\calibration1.bmp"
 
 IDB_BITMAP2             BITMAP                  "E:\\Project Save for Backups\\VCTest_sourcecode\\res\\csv1.bmp"
 
@@ -266,9 +266,9 @@ IDB_BITMAP4             BITMAP                  "res\\Background.bmp"
 
 IDB_BITMAP5             BITMAP                  "res\\sohaib-new.bmp"
 
-IDB_BITMAP7             BITMAP                  "C:\\Users\\sohaib\\Downloads\\sohaib-new\\Fruit Mat.bmp"
+IDB_BITMAP7             BITMAP                  "E:\\Project Save for Backups\\VCTest_sourcecode\\res\\Fruit Mat.bmp"
 
-IDB_BITMAP8             BITMAP                  "C:\\Users\\sohaib\\Downloads\\sohaib-new\\Fruit Mat1.bmp"
+IDB_BITMAP8             BITMAP                  "E:\\Project Save for Backups\\VCTest_sourcecode\\res\\Fruit Mat1.bmp"
 
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
