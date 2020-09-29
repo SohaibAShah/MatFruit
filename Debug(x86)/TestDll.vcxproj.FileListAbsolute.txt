@@ -1,0 +1,4 @@
+F:\Brolight Spectrometer\SP_DLL_1.0.5.557\SP_DLL_1.0.5.557\VCTest_sourcecode\VCTest_sourcecode\Debug(x86)\FruitMaturityMeter(x86).exe
+F:\Brolight Spectrometer\SP_DLL_1.0.5.557\SP_DLL_1.0.5.557\VCTest_sourcecode\VCTest_sourcecode\Debug(x86)\FruitMaturityMeter(x86).pdb
+E:\Project Save for Backups\VCTest_sourcecode\Debug(x86)\FruitMaturityMeter(x86).exe
+E:\Project Save for Backups\VCTest_sourcecode\Debug(x86)\FruitMaturityMeter(x86).pdb
