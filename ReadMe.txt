@@ -1,15 +1,4 @@
 ========================================================================
-       MICROSOFT FOUNDATION CLASS LIBRARY : TestDll
-========================================================================
-
-
-AppWizard has created this TestDll application for you.  This application
-not only demonstrates the basics of using the Microsoft Foundation classes
-but is also a starting point for writing your application.
-
-This file contains a summary of what you will find in each of the files that
-make up your TestDll application.
-
 TestDll.dsp
     This file (the project file) contains information at the project level and
     is used to build a single project or subproject. Other users can share the
